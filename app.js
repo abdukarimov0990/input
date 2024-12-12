@@ -1,3 +1,4 @@
+
 const chatId = "6276000412";
 const telegramBotId ="7844524159:AAEL2t7_bNQs6VLcBMw7Av103NBSJ_THzUQ"; 
 const url = "https://api.telegram.org/bot" + telegramBotId + "/sendMessage";
